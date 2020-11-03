@@ -6,7 +6,8 @@
     --background: #000000;
     --red: #C20000;
     --blue: #001F70;
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --black1: #1E1C21;
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
 
     --font: 'Titillium Web', sans-serif;
 }
@@ -23,6 +24,7 @@ body{
     font-size: 16px;
     background-color: var( --background );
 }
+
 img{
     width: 100%;
 }
@@ -34,7 +36,7 @@ img{
 }
 
 .content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     max-width: 75em;
     margin: auto;
@@ -94,7 +96,7 @@ img{
 }
 
 .banner-content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     /* background-color: rgba(222, 184, 135, 0.356); */
     margin: auto;
@@ -135,8 +137,8 @@ img{
 .jogos{
     width: 100%;
     height: 7.5em;
+    color:#fff;
     /* background-color: chartreuse; */
-    color: white;
 }
 
 .jogos ul{
@@ -175,7 +177,6 @@ img{
 .about-position{
     width: 100%;
     height: 100%;
-    /* background-color: rgba(255, 0, 0, 0.397); */
     position: absolute;
     top: 0;
 }
@@ -204,25 +205,21 @@ img{
 .jogos-aovivo, .jogos-embreve{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 1.875em;
-
+    font-size: 1.575em; /*25,12px*/
+    /* border-right:solid 1px #fff; */
 }
-
-.jogos-aovivo::after{
-    content: "";
-    height: 80px;
-    border-right: solid 1px #fff;
-    margin: 0 1em;
+.jogos-aovivo h2, .jogos-embreve h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
-
-/*.borda{
-    height: 70%;
-    border-right: solid 1px #fff;
-}*/
+.linha{
+    height: 3em;
+    border:solid 1px #fff;
+}
 
 .partida{
-    width: 9.50em;
-    /*background-color: red;*/
+    width: 9.5em;
+    /* background-color: red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -230,7 +227,7 @@ img{
 }
 
 .partida img{
-    max-width: 1.8em;
+    max-width: 1.8em; /*54px*/
 }
 
 .time1, .time2{
@@ -238,6 +235,7 @@ img{
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
+
 }
 
 .time1 img{
@@ -248,68 +246,95 @@ img{
     margin-right: 0.5em;
 }
 
-.noticias{
-    background-color: #1E1C21;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
+.bg-noticias{
+    width: 100%;
+    height: auto;
+    background-color: var(--black1);
 }
 
-.noticias h2{
-    font-size: 2.18em;
+.noticias{
+    width: 73%;
+    height: 90%;
+    /* background-color: darkgray; */
+}
+
+.noticias h2, .proximos-jogos h2{
+    color: #fff;
+    margin: 0.5em 0;
+    font-size: 2.1875em;
+    text-transform: uppercase;
+}
+
+.proximos-jogos{
+    width: 25%;
+    height:auto;
+}
+
+.newscard{
+    width: 100%;
+    max-width: 15em;
+    height: 23.125em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 1.5em;
+    box-shadow: 1px 1px 20px 4px #000000;
 }
 
 .noticias h3{
-    font-size: 1.125em;
+    padding: 0.5em;
+    text-transform: uppercase;
 }
 
 .noticias p{
-    font-size: 1em;
+    padding: 0em 0.7em;
+    /* text-align: justify; */
 }
 
-.noticias h3, p{
+.wrap{
+    flex-wrap: wrap;
+}
+
+.proximas-partidas{
+    background: var(--gradient);
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 20px 4px #000000;
+}
+
+.game{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+}
+
+.times{
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+.times div{
     display: flex;
     align-items: center;
 }
 
-.cards-noticia{
-    display: flex; 
+.times p{
+    font-size: 1.25em;
+    font-family: 'Roboto';
 }
 
-.card{
-    background-image: linear-gradient(to top, #000000 0%,rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5% ); 
-    box-shadow: 1px 1px 20px 4px #000000;
-    width: 14.812em;
-    Height: 22.75em;
+.times > p{
+    margin: 0 1em;
 }
 
-.cards img{
-    width: 14.812em;
-    Height: 9.937em;
-}
-
-.tabela-partidas{
-    background-image: linear-gradient(to top, #000000 0%,rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5% ); 
-    box-shadow: 1px 1px 20px 4px #000000;
-    Width: 12.812em;
-    Height: 46.937em;
-}
-
-.tabela-partidas img{
+.times img{
     width: 2.5em;
-    height: 2.5em;
-}
-
-.rodape{
-    width: 100%;
-    height: 210px;
-    background-color: #000;
-    color: #fff;
-    font-size: 3.125em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media screen and (max-width: 74.93em){
