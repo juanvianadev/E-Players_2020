@@ -411,17 +411,69 @@ img{
 }
 
 @media screen and (max-width: 74.93em){
+.topo nav{
+    width: 80%;
+}
 
+.content{
+    width: 80%;
+}
+.banner-text h1{
+    font-size: 4.62em;
+}
+.banner-text a{
+    font-size: 2em;
+}
 }
 
 @media screen and (max-width: 61.9375em){
 
+.topo nav{
+    width: 80%;
 }
 
+.banner-text h1{
+    font-size: 3.62em;
+}
+
+.banner-text p{
+    font-size: 1.5em;
+}
+
+.banner-text a{
+    font-size: 1.5em;
+}
+
+.content{
+    width: 80%;
+}
+
+}
 @media screen and (max-width: 47.93em){
+.banner-text h1{
+    font-size: 2.62em;
+}
+
+.banner-text p{
+    font-size: 1.25em;
+}
+
+.banner-text a{
+    font-size: 1.25em;
+}
 
 }
 
 @media screen and (max-width: 35.93em){
-   
+.banner-text h1{
+    font-size: 1.62em;
+}
+.banner-text p{
+    font-size: 0.625em;
+}
+
+.banner-text a{
+    font-size: 0.625em;
+}
+
 }
