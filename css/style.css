@@ -190,7 +190,6 @@ img{
 .about-text h2{
     font-size: 2.18em;
     margin-bottom: 0.5em;
-
 }
 
 .about-text p{
@@ -418,18 +417,49 @@ img{
 .content{
     width: 80%;
 }
+
 .banner-text h1{
     font-size: 4.62em;
 }
+
 .banner-text a{
     font-size: 2em;
 }
+
+.jogos img{
+    width: 8.5em;
+}
+
+.about img{
+    max-width: 50%;
+}
+
+.jogos-aovivo, .jogos-embreve{
+    max-width: 80%;
+}
+
+.times p{
+    margin: auto;
+}
+
+.rodape{
+    flex-direction: column-reverse;
+    max-width: 80%;
+}
+
 }
 
 @media screen and (max-width: 61.9375em){
 
-.topo nav{
-    width: 80%;
+.topo991{
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+.menu{
+    margin: auto;
+    justify-content: center;
 }
 
 .banner-text h1{
@@ -448,6 +478,11 @@ img{
     width: 80%;
 }
 
+.jogos-embreve, .jogos-aovivo {
+    flex-direction: column;
+}
+
+
 }
 @media screen and (max-width: 47.93em){
 .banner-text h1{
@@ -460,6 +495,11 @@ img{
 
 .banner-text a{
     font-size: 1.25em;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
 }
 
 }
@@ -475,5 +515,6 @@ img{
 .banner-text a{
     font-size: 0.625em;
 }
+
 
 }
